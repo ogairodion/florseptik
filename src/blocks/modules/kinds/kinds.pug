@@ -1,0 +1,638 @@
+-
+    const kinds = [
+        {
+            img: "1",
+            title: "КСП-ОС-1",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 4 штуки К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 2,8 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 1-3 человека"
+                        }
+                    ]
+                }
+            ],
+            price: "25 900 ₽"
+        },
+        {
+            img: "2",
+            title: "КСП-ОС-10",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 12 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 8,4 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 5-7 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "64 900 ₽"
+        },
+        {
+            img: "3",
+            title: "КСП-ОС-11",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 15 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 10,5 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> более 6 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "76 900 ₽"
+        },
+        {
+            img: "4",
+            title: "КСП-ОС-12",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 110 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 7 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 5-6 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "50 900 ₽"
+        },
+        {
+            img: "5",
+            title: "КСП-ОС-13",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 1,5 м. 12шт"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 4 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 4 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 4 штуки"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 14,4 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> более 10 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "135 900 ₽"
+        },
+        {
+            img: "6",
+            title: "КСП-ОС-14",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 1,5 м. 3шт"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 3,6 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 2-3 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "35 900 ₽"
+        },
+        {
+            img: "7",
+            title: "КСП-ОС-15",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 1,5 м. 3шт"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 3,6 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 2-3 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "35 900 ₽"
+        },
+        {
+            img: "8",
+            title: "КСП-ОС-16",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 1,5 м. 6шт"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 7,2 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 3-4 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "99 900 ₽"
+        },
+        {
+            img: "9",
+            title: "КСП-ОС-2",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 6 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 4,2 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 2-4 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "45 900 ₽",
+        },
+        {
+            img: "10",
+            title: "КСП-ОС-3",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 6 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 4,2 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 2-4 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "34 900 ₽",
+        },
+        {
+            img: "11",
+            title: "КСП-ОС-4",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 9 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 3 штуки"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 6,3 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 4-6 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "59 900 ₽",
+        },
+        {
+            img: "12",
+            title: "КСП-ОС-5",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 8 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 5,6 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 4-6 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "43 900 ₽",
+        },
+        {
+            img: "13",
+            title: "КСП-ОС-6",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span> 7 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 4,9 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 3-4 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "39 900 ₽",
+        },
+        {
+            img: "14",
+            title: "КСП-ОС-7",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span>: 5 штук К-10.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 3,5 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 1-2 человека"
+                        }
+                    ]
+                }
+            ],
+            price: "29 900 ₽",
+        },
+        {
+            img: "15",
+            title: "КСП-ОС-8",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span>: 4 штук К-15.9"
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 4,8 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 3-5 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "49 900 ₽",
+        },
+        {
+            img: "16",
+            title: "КСП-ОС-9",
+            characteristics: [
+                {
+                    title: "В стоимость входит:",
+                    list: [
+                        {
+                            text: "<span>Кольца:</span>: К-10.9 2 шт. и К-15-9 2 шт."
+                        },
+                        {
+                            text: "<span>Обечайки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Крышки:</span> 2 штуки"
+                        },
+                        {
+                            text: "<span>Дно:</span> 1 штука"
+                        },
+                        {
+                            text: "<span>Работа:</span> установка под ключ"
+                        }
+                    ]
+                },
+                {
+                    title: "Характеристики",
+                    list: [
+                        {
+                            text: "<span>Объем септика:</span> 3,6 м<sup>3</sup>"
+                        },
+                        {
+                            text: "<span>Расчет:</span> 2-4 человек"
+                        }
+                    ]
+                }
+            ],
+            price: "38 900 ₽",
+        }
+    ]
+
+section.kinds#kinds
+    .l-default 
+        h2.kinds__title.title.title--h2 <span class="text--blue">ВСЕ ТИПЫ</span> СЕПТИКОВ
+        .kinds__items
+            each kind in kinds
+                a.kinds__item(href="#popup-product" data-fancybox) 
+                    .kinds__item-img 
+                        picture
+                            source(srcset="img/kinds/"+ kind.img +".webp" type="image/webp")
+                            source(srcset="img/kinds/"+ kind.img +".jpg" type="image/jpg")
+                            img.lazy(data-src="img/kinds/"+ kind.img +".jpg" alt="")
+                    .kinds__item-info
+                        .kinds__item-title= kind.title
+                        .kinds__item-characteristics
+                            each characteristic in kind.characteristics 
+                                .kinds__characteristic
+                                    .kinds__characteristic-title= characteristic.title
+                                    ul.kinds__item-list 
+                                        each list_item in characteristic.list
+                                            li.kinds__item-li!= list_item.text  
+                        .kinds__item-text Стоимость септика с монтажом: 
+                        .kinds__item-price= kind.price
+                        .kinds__item-btns
+                            .kinds__item-btn.btn.btn--blue Подробнее
+            .kinds__btn
+                button.btn.btn--more.show_btn Показать еще

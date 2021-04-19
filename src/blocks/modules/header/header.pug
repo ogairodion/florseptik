@@ -1,0 +1,34 @@
+-
+    const menu_items = [
+        {
+            text: "Виды септиков",
+            href: "#kinds"
+        },
+        {
+            text: "Галерея работ",
+            href: "#gallery"
+        },
+        {
+            text: "Контакты",
+            href: "#footer"
+        }
+    ]
+    
+header.header
+    .shadow
+    .l-default
+        .header__wrapper
+            .header__logo 
+                img.lazy(data-src="img/svg/logo.svg", alt="")
+            .header__menu
+                each menu_item in menu_items
+                    a.header__menu-item.scroll(href=menu_item.href)= menu_item.text     
+            .header__phones
+                a.header__phone(href="+74951034768") +7 (495) 103-47-68
+                a.header__phone(href="+79646424778") +7 (964) 64-24-77-8
+                a.header__whatsapp.lazy(href="whatsapp://send?text=Hello&phone=+74950707078&abid=+74950707078")
+                    +svgMono("whatsapp")
+            .header__burger 
+                span 
+                span 
+                span 

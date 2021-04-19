@@ -1,0 +1,18 @@
+.popup.popup-product#popup-product
+    .popup-product__wrapper
+        .popup-product__img 
+        .popup-product__info
+            .popup-product__title
+            .popup-product__characteristics
+            .popup-product__price
+            .popup-product__btns
+                a.popup-product__btn.btn.btn--blue(href="#popup-buy" data-fancybox) Заказать 
+                a.popup-product__btn.btn.btn--blue(href="#popup-form" data-fancybox) Консультация
+
+.popup.popup-form#popup-form
+    h4.form__title.title.title--h4 Получить консультацию!
+    include ../form/form.pug
+
+.popup.popup-form#popup-buy
+    h4.form__title.title.title--h4 Заказать
+    include ../form/form-buy.pug

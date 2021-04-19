@@ -1,0 +1,14 @@
+-
+    const gallery = ["1", "2", "3","4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+section.gallery#gallery
+    .l-default 
+        h2.gallery__title.title.title--h2 Галерея <span class="text--blue">работ</span> 
+        .gallery__items.swiper-container    
+            .swiper-wrapper
+                each gallery_photo in gallery
+                    a.gallery__item.swiper-slide.swiper-lazy(style="background: url('img/gallery/"+ gallery_photo +".jpg'); background: url('img/gallery/"+ gallery_photo +".webp');background-repeat: no-repeat; background-size: cover; background-position: center" href="img/gallery/"+ gallery_photo +".jpg" data-fancybox="gallery") 
+            .swiper-pagination
+        .swiper-arrow.swiper-arrow-prev
+            +svgMono("arrow")
+        .swiper-arrow.swiper-arrow-next
+            +svgMono("arrow")

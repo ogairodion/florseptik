@@ -1,0 +1,110 @@
+.kinds {
+    background: #d3f4f4;
+    padding: 100px 0 50px;
+    @media screen and (max-width: 1199px) {
+        padding: 60px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 40px 0;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 100px;
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+    }
+    &__item {
+        width: calc(25% - 30px);
+        margin: 0 15px 30px;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all .4s ease-in-out;
+        border: 1px solid #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #fff;
+        @media screen and (max-width: 1199px) {
+            width: calc(33.3333% - 30px);
+        }
+        @media screen and (max-width: 767px) {
+            width: calc(50% - 30px);
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        &:hover {
+            border: 1px solid $blue;
+            box-shadow: 0px 0px 18px 10px rgba(34, 60, 80, 0.2);
+            .btn {
+                background: #fff;
+                color: $blue !important;
+            }
+        }
+        &-img {
+            margin-bottom: 20px;
+            @media screen and (max-width: 767px) {
+                max-width: 300px;
+                margin: 0 auto 20px;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+        &-title {
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+        &-price {
+            font-size: 28px;
+            font-weight: 900;
+            text-align: center;
+            margin: 20px 0;
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+        &-text {
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0;
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+        &-characteristics {
+            display: none;
+        }
+        .btn {
+            max-width: 200px;
+            min-height: 40px;
+            margin: 0 auto;
+        }
+    }
+    &__btn {
+        width: 100%;
+        .btn--more {
+            display: none;
+            width: auto;
+            min-height: 40px;
+            font-size: 22px;
+            padding: 0 100px;
+            margin: 0 auto;
+        }
+    }
+}

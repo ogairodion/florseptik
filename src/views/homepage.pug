@@ -1,0 +1,21 @@
+extends layouts/default
+include helpers/_mixins
+
+block variables
+  - const title = "Florseptik"
+
+block content
+  include ../blocks/modules/loader/loader.pug
+  include ../blocks/modules/header/header.pug
+  main.main
+    include ../blocks/modules/main-top/main-top.pug
+    include ../blocks/modules/horizontal-form/horizontal-form.pug
+    include ../blocks/modules/kinds/kinds.pug
+    include ../blocks/modules/horizontal-form/horizontal-form-title.pug
+    include ../blocks/modules/gallery/gallery.pug
+  include ../blocks/modules/footer/footer.pug
+  include ../blocks/modules/popups/popups.pug
+
+block scripts
+  script(src="js/vendor.js")
+  script(src="js/main.js")
